@@ -1,0 +1,349 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5e1da;
+}
+
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: none; 
+}
+
+::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #f5e1da;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #E1306C;
+}
+
+
+
+.header{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+#search{
+    float: right;
+    background-color: #ebc9c1;
+    padding: 5px 10px;
+    
+    width: 200px;
+    border-radius: 500px;
+    min-width: 300px;
+}
+
+#search input{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    align-content: center;
+    width: 90%;
+}
+
+#search .button-search{
+    width: 5%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+}
+#search .button-search:hover{
+    color: #E1306C;
+}
+
+#contain{
+    /* box-shadow: 0px 3px 25px 0px rgba(31,38,67,0.1); */
+    background-color: #f5e1da;
+    padding: 5% 50px;
+}
+
+.item{
+    background-color: #d7886d;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.item span{
+    background-color: #d7886d;
+    font-size: 0.9rem;
+}
+
+.item .name{
+    display: block;
+    font-weight: 500;
+}
+
+.item .price{
+    font-weight: 600;
+    color: #dddad9;
+    background-color: #d7886d;
+    width: 100%;
+    text-align: center;
+}
+
+.item .priceSale{
+    color: #888888;
+    background-color: transparent;
+    width: 100%;
+    text-decoration: line-through;
+    font-style: italic;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.item img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+}
+
+.socials i{
+    margin: 10px;
+}
+
+.scrollToTop{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background-color: #fff;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.16);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transform: translateX(6rem);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.5s linear;
+    visibility: hidden;
+    z-index: 2;
+    border-radius: 5px;
+    
+}
+
+.scrollToTop i{
+    color: #d7886d;
+    font-size: 1.3rem;
+    background-color: transparent;
+    
+}
+
+.scrollToTop:hover{
+    text-decoration: none;
+    animation: bigbabol 0.3s ease;
+    
+}
+.scrollToTop:hover i{
+    color: #fff;
+}
+
+@keyframes bigbabol {
+    0% {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(1.2);
+    }
+    66% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.active{
+    visibility: visible;
+    transform: translateX(0);
+    transition: 2s;
+}
+
+.effect-for-btn::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #47474c;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.effect-for-btn:hover::after {
+    width: 100%;
+}
+
+#detail{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+.background_detail{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 190, 190);
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formItem{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 80%;
+    opacity: 1;
+    background-color: #d7886d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.formItem .side_2{
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.formItem div{
+    background-color: transparent;
+}
+
+.formItem span{
+    background-color: transparent;
+    
+}
+
+.formItem .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    
+}
+
+.formItem .close i{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.formItem .img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    background-color: #f5e1da;
+    transform: rotate(10deg);
+    margin-bottom: 20PX;
+}
+
+.formItem img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    
+}
+
+.formItem .type{
+    padding: 0 5px;
+}
+
+.formItem .type .row div{
+    padding: 2px;
+    text-align: center;
+}
+
+.formItem .type .itemType{
+    background-color: #f5e1da;
+    font-weight: 600;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.formItem .type .activeType{
+    background-color: #47474c;
+    color: #fff;
+}
+
+.formItem span .content{
+    color: #888888;
+    font-style: italic;
+}
+
+.formItem .nameForm{
+    font-weight: 600;
+    font-size: 1.4rem;
+    min-height: 100px;
+    display: block;
+}
+
+.formItem .price{
+    text-align: center;
+}
+
+.formItem .priceForm{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #dddad9;
+}
+
+.formItem .priceSaleForm{
+    color: #888888;
+    background-color: transparent;
+    text-decoration: line-through;
+    font-style: italic;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.formItem .description{
+    margin-top: 10px;
+    background-color: #f5e1da;
+    padding: 8px;
+}
+
+.formItem .description .content{
+    background-color: #f5d5c9;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 576px){
+    #serach{
+        float: none;
+        width: 100%;
+    }
+
+    .formItem{
+        width: 90%;
+        height: 80%;
+    }
+
+    .formItem .price{
+        text-align: left;
+    }
+
+    .formItem .nameForm{
+        min-height: max-content;
+    }
+}
